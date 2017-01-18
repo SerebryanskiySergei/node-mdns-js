@@ -11,9 +11,7 @@ module.exports.version = config.version;
 module.exports.name = config.name;
 
 /* @borrows Browser as Browser */
-var Browser = module.exports.Browser = require('./lib/browser'); //just for convenience
-/* @borrows Advertisement as Advertisement */
-var Advertisement = module.exports.Advertisement = require('./lib/advertisement'); //just for convenience
+module.exports.Browser = require('./lib/browser'); //just for convenience
 
 /**
  * Create a browser instance
@@ -25,7 +23,7 @@ module.exports.createBrowser = function browserCreated(serviceType) {
   if (typeof serviceType === 'undefined') {
     serviceType = st.ServiceType.wildcard;
   }
-  return new Browser(networking, serviceType);
+  return new module.exports.Browser(networking, serviceType);
 };
 
 
@@ -43,6 +41,9 @@ module.exports.excludeInterface = function (iface) {
 };
 
 
+/* @borrows Advertisement as Advertisement */
+module.exports.Advertisement = require('./lib/advertisement'); //just for convenience
+
 /**
  * Create a service instance
  * @method
@@ -53,7 +54,7 @@ module.exports.excludeInterface = function (iface) {
  */
 module.exports.createAdvertisement =
   function advertisementCreated(serviceType, port, options) {
-    return new Advertisement(
+    return new module.exports.Advertisement(
       networking, serviceType, port, options);
   };
 

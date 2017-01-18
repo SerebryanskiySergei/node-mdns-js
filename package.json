@@ -1,48 +1,115 @@
 {
-  "name": "mdns-js",
-  "version": "0.5.3",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mdns-js/node-mdns-js.git"
-  },
-  "description": "JavaScript/NodeJS mDNS discovery implementation",
-  "keywords": [
-    "mdns",
-    "dns-sd",
-    "zeroconf"
+  "_args": [
+    [
+      {
+        "raw": "nmos-mdns-js@^0.5.2",
+        "scope": null,
+        "escapedName": "nmos-mdns-js",
+        "name": "nmos-mdns-js",
+        "rawSpec": "^0.5.2",
+        "spec": ">=0.5.2 <0.6.0",
+        "type": "range"
+      },
+      "/home/serebro/Projects/ledger"
+    ]
   ],
-  "engines": {
-    "node": ">= 4.1.0"
+  "_from": "nmos-mdns-js@>=0.5.2 <0.6.0",
+  "_id": "nmos-mdns-js@0.5.2",
+  "_inCache": true,
+  "_location": "/nmos-mdns-js",
+  "_nodeVersion": "4.2.2",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/nmos-mdns-js-0.5.2.tgz_1471950162544_0.3022513927426189"
   },
-  "main": "index.js",
+  "_npmUser": {
+    "name": "streampunk",
+    "email": "furnace@streampunk.media"
+  },
+  "_npmVersion": "3.8.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nmos-mdns-js@^0.5.2",
+    "scope": null,
+    "escapedName": "nmos-mdns-js",
+    "name": "nmos-mdns-js",
+    "rawSpec": "^0.5.2",
+    "spec": ">=0.5.2 <0.6.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nmos-mdns-js/-/nmos-mdns-js-0.5.2.tgz",
+  "_shasum": "8aee10410bc4bf28727ab628a4796f76bdbc5c64",
+  "_shrinkwrap": null,
+  "_spec": "nmos-mdns-js@^0.5.2",
+  "_where": "/home/serebro/Projects/ledger",
+  "author": {
+    "name": "Peter Magnusson",
+    "email": "peter@birchroad.net"
+  },
+  "bugs": {
+    "url": "https://github.com/mdns-js/node-mdns-js/issues"
+  },
+  "contributors": [
+    {
+      "name": "James Sigurðarson",
+      "email": "jamiees2@gmail.com",
+      "url": "http://jamessigurdarson.com"
+    },
+    {
+      "name": "Richard Cartwright",
+      "email": "spark@streampunk.media",
+      "url": "http://www.streampunk.media"
+    }
+  ],
   "dependencies": {
     "debug": "^2.1.1",
     "dns-js": "~0.2.1",
     "semver": "~5.1.0"
   },
+  "deprecated": "Please switch to using the core mdns-js package, which has the necessary fix.",
+  "description": "JavaScript/NodeJS mDNS discovery implementation. Fork of mdns-js.",
   "devDependencies": {
-    "code": "^4.0.0",
-    "eslint": "^3.12.2",
+    "code": "*",
     "joi": "~7.1.0",
-    "lab": "^11.2.1"
+    "lab": "*"
   },
-  "scripts": {
-    "test": "lab --flat && npm run lint",
-    "lint": "eslint test examples lib index.js",
-    "doc": "jsdoc -d .\\doc index.js lib"
+  "directories": {},
+  "dist": {
+    "shasum": "8aee10410bc4bf28727ab628a4796f76bdbc5c64",
+    "tarball": "https://registry.npmjs.org/nmos-mdns-js/-/nmos-mdns-js-0.5.2.tgz"
   },
-  "author": {
-    "name": "Peter Magnusson",
-    "email": "peter@birchroad.net"
+  "engines": {
+    "node": ">= 4.1.0"
   },
-  "contributors": [
-    "James Sigurðarson <jamiees2@gmail.com> (http://jamessigurdarson.com)",
-    "David Baldwynn <whitef0x0@users.noreply.github.com>",
-    "Stefan Sauer <ensonic@google.com>"
+  "gitHead": "73408879bbe8d404fcc7235d3f3adff09de7982e",
+  "homepage": "https://github.com/Streampunk/nmos-mdns-js",
+  "keywords": [
+    "mdns",
+    "dns-sd",
+    "zeroconf"
   ],
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/mdns-js/node-mdns-js/issues"
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "streampunk",
+      "email": "furnace@streampunk.media"
+    }
+  ],
+  "name": "nmos-mdns-js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Streampunk/nmos-mdns-js.git"
   },
-  "homepage": "https://github.com/mdns-js/node-mdns-js"
+  "scripts": {
+    "doc": "jsdoc -d .\\doc index.js lib",
+    "lint": "eslint test examples lib index.js",
+    "test": "lab --flat --coverage"
+  },
+  "version": "0.5.2"
 }

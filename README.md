@@ -1,11 +1,10 @@
 mDNS-js
 ==========
 
-[![Build Status](https://travis-ci.org/mdns-js/node-mdns-js.svg?branch=master)](https://travis-ci.org/mdns-js/node-mdns-js)
-
-Pure JavaScript/NodeJS mDNS discovery implementation.
+Streampunk Media's temporary fork of the pure JavaScript/NodeJS mDNS discovery
+implementation `mdns-js` to fix an issue with stale state on browser stop.
 It's definitely not a full implementation at the current
-state and it will NOT work in the browser. 
+state and it will NOT work in the browser.
 
 The starting inspiration came from
 https://github.com/GoogleChrome/chrome-app-samples/tree/master/mdns-browser
@@ -44,7 +43,7 @@ var mdns = require('mdns-js');
 var browser = mdns.createBrowser();
 
 browser.on('ready', function () {
-    browser.discover(); 
+    browser.discover();
 });
 
 browser.on('update', function (data) {
@@ -58,8 +57,8 @@ Please report any issues at https://github.com/mdns-js/node-mdns-js/issues
 
 But please check if there is a similar issue already reported and
 __make a note of which OS__ and OS version you are running.
-There is some issues that turn up only on Windows 8.1 but not in 
-Windows 7 for example. And there are differences between Mac and 
+There is some issues that turn up only on Windows 8.1 but not in
+Windows 7 for example. And there are differences between Mac and
 Windows so... __please__...
 
 Another important thing to know if there is another mdns service
@@ -68,7 +67,7 @@ running on the same machine. This would be for example Bonjour and Avahi.
 
 Debugging
 ---------
-This library is using the [debug](https://github.com/visionmedia/debug) 
+This library is using the [debug](https://github.com/visionmedia/debug)
 module from TJ Holowaychuk and can be used like this.
 
 ```bash
@@ -98,9 +97,9 @@ Please run any existing tests with
 and preferably add more tests.
 
 
-Before creating a pull-request please run 
+Before creating a pull-request please run
 
-    npm run lint 
+    npm run lint
 
 This will run jshint as well as jscs that will do some basic syntax
 and code style checks.
