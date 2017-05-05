@@ -66,7 +66,7 @@
   ],
   "dependencies": {
     "debug": "^2.1.1",
-    "dns-js": "SerebryanskiySergei/dns-js",
+    "dns-js": "SerebryanskiySergei/node-dns-js",
     "semver": "~5.1.0"
   },
   "deprecated": "Please switch to using the core mdns-js package, which has the necessary fix.",
